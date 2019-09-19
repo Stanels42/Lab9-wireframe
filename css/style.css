@@ -1,0 +1,97 @@
+*{
+  outline: black solid 1px;
+}
+
+body {
+  margin: 0 auto 0 auto;
+}
+
+/* Header */
+header {
+
+  margin: 0px 0 15px 0;
+
+  background: #333333;
+}
+header > * {
+  margin: 15px;
+}
+
+nav {
+
+  display: inline-block;  
+
+}
+
+nav > a {
+  display:inline-block;
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: #777777;
+}
+
+header > img {
+
+  float: left;
+
+}
+
+/* Main */
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+div>img {
+  margin: 15px 30px 15px 30px;
+}
+/* The 3 Images displayed in a line */
+main > section {
+  margin: 15px;
+}
+main > section > img {
+  margin: 15px;
+}
+
+/* The Display of the featured part of the page */
+#featured {
+  display: inline-block;
+  overflow: auto;
+}
+#featured > img {
+  float: left;
+}
+#featured > article {
+  display: inline-block;
+  max-width: 25%;
+  height: 400px;
+  margin: 15px;
+
+}
+#featured > article > h4 {
+  font-size: 2em;
+}
+#featured > article > p {
+  font-size: 1.25em;
+  max-height: 325px;
+  overflow:scroll;
+}
+
+/*  */
+button {
+  transition: 350ms;
+}
+
+/* Allow for the button to change color */
+button:hover {
+  background: #333333;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  background: #333333
+}
