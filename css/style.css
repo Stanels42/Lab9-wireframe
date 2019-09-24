@@ -1,97 +1,88 @@
-*{
-  outline: black solid 1px;
-}
+/* Universal */
 
-body {
-  margin: 0 auto 0 auto;
+* {
+  /* outline: black solid 1px; */
 }
+/* Im not gunna pretend like this lab went well most of this code was coppied durring class. I was trying to work along with the lecture */
 
 /* Header */
 header {
-
-  margin: 0px 0 15px 0;
-
-  background: #333333;
+  height:  100px;
+  background-color: #666666;
 }
-header > * {
-  margin: 15px;
-}
-
-nav {
-
-  display: inline-block;  
-
-}
-
-nav > a {
-  display:inline-block;
-
-  padding: 30px;
-
-  text-align: center;
-
-  background: #777777;
-}
-
-header > img {
-
+header img { 
   float: left;
-
+  margin:15px auto;
+}
+nav{
+  outline: black solid 1px;
+  overflow: auto;
+  width: 960px;
+  margin: 0px auto;
+}
+nav li {
+  display:inline-block; 
+  margin-top:40px;
+  margin-left:80px;
+}
+li a {
+  font-size: 2em;
+  color: black;
+  text-decoration: none;
 }
 
 /* Main */
 main {
-  margin: 0 auto;
-  max-width: 1200px;
+  width: 960px;
+  margin: 30px auto;
+  margin-bottom: 0px;
 }
-
-div>img {
-  margin: 15px 30px 15px 30px;
+main ul {
+  overflow:auto;
 }
-/* The 3 Images displayed in a line */
-main > section {
-  margin: 15px;
+main ul li{
+  float: left;
+  margin: 30px 30px 30px 0;
 }
-main > section > img {
-  margin: 15px;
+main ul li:last-child {
+  margin-right:0px;
 }
-
-/* The Display of the featured part of the page */
 #featured {
-  display: inline-block;
-  overflow: auto;
+  overflow:auto;
 }
-#featured > img {
+
+#featured > img{
   float: left;
 }
-#featured > article {
-  display: inline-block;
-  max-width: 25%;
-  height: 400px;
-  margin: 15px;
 
-}
-#featured > article > h4 {
+#featured h4 {
   font-size: 2em;
 }
-#featured > article > p {
-  font-size: 1.25em;
-  max-height: 325px;
-  overflow:scroll;
+
+#featured article {
+  max-width: calc(50% - 30px);
+  max-height: 400px;
+  float: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
 }
 
-/*  */
+#featured article p {
+  overflow: scroll;
+  max-height: calc(400px - 4em);
+}
+
 button {
-  transition: 350ms;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 350ms
 }
-
-/* Allow for the button to change color */
 button:hover {
-  background: #333333;
+  background-color: black;
+  color: white;
 }
-
 /* Footer */
 footer {
   height: 100px;
-  background: #333333
+  background-color: grey;
 }
